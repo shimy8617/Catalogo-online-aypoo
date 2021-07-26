@@ -16,29 +16,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 <body>
-	<header>
-		<div class="logo-place"><a href="index.php"><img src="assets/logo.png"></a></div>
-		<div class="search-place">
-			<input type="text" id="idbusqueda" placeholder="Escribe el producto que buscas">
-			<button class="btn-main btn-search"><i class="fas fa-search" aria-hidden="true"></i></button>
-		</div>
-		<div class="options-place">
-			<?php
-			if (isset($_SESSION['codusu'])) {
-				echo 
-				'<div class="item-option"><i class="fas fa-user-circle" aria-hidden="true"></i><p>'.$_SESSION['nomusu'].'</p></div>';
-			}else{
-			?>
-			<div class="item-option" title="Registrate"><i class="fas fa-user-circle"></i></div>
-			<div class="item-option" title="Ingresar a mi cuenta"><i class="fas fa-sign-in-alt" aria-hidden="true"></i></div>
-			<?php
-			}
-			?>
-			<div class="item-option" title="Mi Carrito">
-				<a href="carrito.php"><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
-			</div>
-		</div>
-	</header>
+	<?php include("layouts/_main-header.php"); ?>
 	<div class="main-content">
 		<div class="content-page">
 			<h3>Mi Carrito</h3>
