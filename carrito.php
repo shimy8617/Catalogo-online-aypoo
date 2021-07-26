@@ -47,6 +47,7 @@
 			<button onclick="procesar_compra()" style="margin-top: 5px">Procesar compra</button>
 		</div>
 	</div>
+	<script type="text/javascript" src="js/main-scripts.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.ajax({
