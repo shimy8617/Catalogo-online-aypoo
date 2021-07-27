@@ -301,3 +301,8 @@ input[type="radio"]{
 .detail-box .detail .mb5{
 	margin-bottom: 5px;
 }
+.btn-delete-cart{
+	text-decoration: underline;
+	color: blue;
+	background: transparent;
+}
