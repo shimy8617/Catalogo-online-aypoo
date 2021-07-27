@@ -306,3 +306,13 @@ input[type="radio"]{
 	color: blue;
 	background: transparent;
 }
+@media(max-width: 787px){
+	.product-box{
+	width: calc(100%/4 - 20px);
+	}
+}
+@media(max-width: 637px){
+	.product-box{
+	width: calc(100%/3 - 20px);
+	}
+} 
