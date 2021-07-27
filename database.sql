@@ -33,8 +33,11 @@ VALUES ('#215','Remera de Morley','1050.00','1','215.jpg'),
 
 CREATE TABLE USUARIO(
 	codusu int not null AUTO_INCREMENT,
-	nomusu varchar(50) ,
+	nomusu varchar(50) not null,
 	apeusu varchar(50) ,
+	cuitsuped varchar(11) not null,
+	dirusuped varchar(50) not null,
+	telusuped varchar(12) not null,
 	emausu varchar(50) not null,
 	pasusu varchar(20) not null,
 	estado int not null,

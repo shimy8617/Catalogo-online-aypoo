@@ -30,16 +30,17 @@
 				data:{},
 				success:function(data){
 					console.log(data);
-					let html = '';
+					let html='';
 					for (var i = 0; i < data.datos.length; i++) {
 						html+=
-						'<div class="detail-box">'+
+						'<div class="detail-box mb5">'+
 							'<div class="img">'+
 								'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
 							'</div>'+
 							'<div class="detail">'+
 								'<h3 class="mb5">'+data.datos[i].nompro+'</h3>'+
-								'<p class="mb5">'+data.datos[i].fecped+'</p>'+
+								'<p class="mb5">Fecha: '+data.datos[i].fecped+'</p>'+
+								'<p class="mb5">Estado: '+data.datos[i].estado+'</p>'+
 								'<p class="mb5">'+data.datos[i].despro+'</p>'+
 								'<h4 class="mb5">'+formato_precio(data.datos[i].prepro)+'</h4>'+
 							'</div>'+
