@@ -12,10 +12,10 @@ if ($result) {
 	if ($count==0) {
 		//Puede crear un nuevo usuario
 		$nomusu=$_POST['nomusureg'];
-		$pasusu=$_POST['pasusureg'];
+		$apeusu=$_POST['apeusureg'];
 		$dirusu=$_POST['dirusureg'];
 		$localsu=$_POST['localsureg'];
-		$provusu=$_POST['provsureg'];
+		$provsu=$_POST['provsureg'];
 		$codpossu=$_POST['codpossureg'];
 		$telusu=$_POST['telusureg'];
 		$cuitsu=$_POST['cuitsureg'];
@@ -25,7 +25,7 @@ if ($result) {
 		if ($pasusu!=$pasusu2) {
 			header('Location: ../login.php?ereg=3');
 		}else{
-			$sql="INSERT into usuario (codusu,emausu,nomusu,pasusu,dirusu,localsu,provsu,codpossu,telusu,cuitsu,cfisu,estado) VALUES ('','$emausu','$nomusu','$pasusu','$dirusu','$localsu','$provsu','$codpossu','$telusu','$cuitsu','$cfisu',1)";
+			$sql="INSERT into usuario (codusu,emausu,apeusu,nomusu,pasusu,dirusu,localsu,provsu,codpossu,telusu,cuitsu,cfisu,estado) VALUES ('','$emausu','$nomusu','$apeusu','$pasusu','$dirusu','$localsu','$provusu','$codpossu','$telusu','$cuitsu','$cfisu',1)";
 			$result=mysqli_query($con,$sql);
 			$codusu=mysqli_insert_id($con);
 			session_start();
