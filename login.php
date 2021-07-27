@@ -67,9 +67,42 @@
 						}
 					}
 				?>
-				<button>Ingresar</button>
+				<button type="submit">Ingresar</button>
 			</form>
-
+			<form action="servicios/register.php" method="POST">
+				<h3>Registrate</h3>
+				<input type="text" name="nomusureg" placeholder="Nombre">
+				<input type="text" name="apeusureg" placeholder="Apellido">
+				<input type="text" name="dirusureg" placeholder="Domicilio">
+				<input type="text" name="localsureg" placeholder="Localidad">
+				<input type="text" name="provsureg" placeholder="Provincia">
+				<input type="text" name="codpossureg" placeholder="Código Postal">
+				<input type="text" name="telusureg" placeholder="Número de Whatsapp">
+				<input type="text" name="cuitsureg" placeholder="Número de CUIT">
+				<input type="text" name="cfisureg" placeholder="Condición frente al IVA">
+				<input type="text" name="emausureg" placeholder="Mail">
+				<input type="password" name="pasusureg" placeholder="Contraseña">
+				<input type="password" name="pasusu2reg" placeholder="Confirmar contraseña">
+				<?php
+					if (isset($_GET['ereg'])) {
+						switch ($_GET['ereg']) {
+							case '1':
+								echo '<p>Error de conexión</p>';
+								break;
+							case '2':
+								echo '<p>Lo siento, este email ya está en uso</p>';
+								break;
+							case '3':
+								echo '<p>Las contraseñas no coinciden</p>';
+								break;
+							default:
+								break;
+						}
+					}
+				?>
+				<button type="submit">Crear cuenta</button>
+			</form>
+ 
 		</div>
 	</div>
 </body>
