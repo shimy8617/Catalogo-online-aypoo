@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/469e0bb689.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="fontawesome-v5/css/fontawesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	</head>
 <body>
