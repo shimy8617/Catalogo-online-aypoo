@@ -25,8 +25,17 @@
 					<h2 id="idtitle">NOMBRE PRINCIPAL</h2>
 					<h1 id="idprice">1050.<span>00</span></h1>
 					<h3 id="iddescription">Descripción del producto</h3>
+					<div>
+						<select id="colorpick">Color</select>
+						<input type="number" id="quantity" name="quantity" min="1" max="10"></input><br>
+						<select id="colorpick">Color</select>
+						<input type="number" id="quantity" name="quantity" min="1" max="10"></input><br>
+						<select id="colorpick">Color</select>
+						<input type="number" id="quantity" name="quantity" min="1" max="10"></input>
+					</div>
+					<br>
 					<button onclick="iniciar_compra()">Comprar</button>
-				</div>
+				</div>				
 			</section>
 			<div class="title-section">Productos destacados</div>
 			<div class="products-list" id="space-list">

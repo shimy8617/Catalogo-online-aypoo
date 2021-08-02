@@ -74,6 +74,10 @@
 							'</div>'+
 						'</div>';
 					}
+					if (data.datos.length==0) {
+						alert("No hay productos en carrito");
+						window.history.back();
+					}
 					document.getElementById("space-list").innerHTML=html
 				},
 				error:function(err){
